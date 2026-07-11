@@ -567,7 +567,7 @@ async function main() {
     }
   }
 
-  console.log(`\n→ Run /career-ops pipeline to evaluate new offers.`);
+  console.log(`\n→ Run /resume-writer pipeline to evaluate new offers.`);
 
 }
 

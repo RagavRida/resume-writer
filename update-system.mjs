@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * update-system.mjs — Safe auto-updater for career-ops
+ * update-system.mjs — Safe auto-updater for resume-writer
  *
  * Updates ONLY system layer files (modes, scripts, dashboard, templates).
  * NEVER touches user data (cv.md, profile.yml, _profile.md, data/, reports/).
@@ -23,9 +23,9 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = __dirname;
 
-const CANONICAL_REPO = 'https://github.com/raghavendramachikatla/career-ops.git';
-const RAW_VERSION_URL = 'https://raw.githubusercontent.com/raghavendramachikatla/career-ops/main/VERSION';
-const RELEASES_API = 'https://api.github.com/repos/raghavendramachikatla/career-ops/releases/latest';
+const CANONICAL_REPO = 'https://github.com/raghavendramachikatla/resume-writer.git';
+const RAW_VERSION_URL = 'https://raw.githubusercontent.com/raghavendramachikatla/resume-writer/main/VERSION';
+const RELEASES_API = 'https://api.github.com/repos/raghavendramachikatla/resume-writer/releases/latest';
 
 // System layer paths — ONLY these files get updated
 const SYSTEM_PATHS = [
@@ -178,7 +178,7 @@ async function check() {
       fetch(RELEASES_API, {
         headers: {
           'Accept': 'application/vnd.github.v3+json',
-          'User-Agent': 'career-ops-update-checker',
+          'User-Agent': 'resume-writer-update-checker',
         },
         signal: controller.signal,
       }),
@@ -285,7 +285,7 @@ async function apply() {
     // symlinks — e.g. v1.6.x → v1.7.x where .agents/ was introduced but the
     // local v1.6.x SYSTEM_PATHS didn't include it, so `.agents/` was never
     // checked out while `.claude/skills/` was updated to symlink into it.
-    // See: https://github.com/raghavendramachikatla/career-ops/issues/649
+    // See: https://github.com/raghavendramachikatla/resume-writer/issues/649
     const BOOTSTRAP_PATHS = ['.agents/', 'providers/', 'liveness-browser.mjs'];
     for (const path of BOOTSTRAP_PATHS) {
       if (SYSTEM_PATHS.includes(path)) continue; // already in main loop

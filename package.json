@@ -1,5 +1,5 @@
 {
-  "name": "career-ops",
+  "name": "resume-writer",
   "version": "1.8.1",
   "description": "AI-powered job search pipeline built on Claude Code",
   "scripts": {
@@ -24,15 +24,15 @@
     "job-search",
     "claude-code",
     "career",
-    "career-ops",
-    "careerops",
+    "resume-writer",
+    "resumewriter",
     "automation"
   ],
   "author": "Raghavendra Machikatla <raghavendramachikatla@example.com> (https://github.com/raghavendramachikatla)",
   "homepage": "https://github.com/raghavendramachikatla",
   "repository": {
     "type": "git",
-    "url": "https://github.com/raghavendramachikatla/career-ops"
+    "url": "https://github.com/raghavendramachikatla/resume-writer"
   },
   "license": "MIT",
   "dependencies": {

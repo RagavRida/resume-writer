@@ -11,8 +11,8 @@
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/raghavendramachikatla/career-ops.git
-cd career-ops
+git clone https://github.com/raghavendramachikatla/resume-writer.git
+cd resume-writer
 npm install
 npx playwright install chromium   # Required for PDF generation
 ```
@@ -50,19 +50,19 @@ Open Claude Code in this directory:
 claude
 ```
 
-Then paste a job offer URL or description. Career-ops will automatically evaluate it, generate a report, create a tailored PDF, and track it.
+Then paste a job offer URL or description. Resume Writer will automatically evaluate it, generate a report, create a tailored PDF, and track it.
 
 ## Available Commands
 
 | Action | How |
 |--------|-----|
 | Evaluate an offer | Paste a URL or JD text |
-| Search for offers | `/career-ops scan` |
-| Process pending URLs | `/career-ops pipeline` |
-| Generate a PDF | `/career-ops pdf` |
-| Batch evaluate | `/career-ops batch` |
-| Check tracker status | `/career-ops tracker` |
-| Fill application form | `/career-ops apply` |
+| Search for offers | `/resume-writer scan` |
+| Process pending URLs | `/resume-writer pipeline` |
+| Generate a PDF | `/resume-writer pdf` |
+| Batch evaluate | `/resume-writer batch` |
+| Check tracker status | `/resume-writer tracker` |
+| Fill application form | `/resume-writer apply` |
 
 ## Verify Setup
 

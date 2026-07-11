@@ -58,7 +58,7 @@ const args = process.argv.slice(2);
 if (args.length === 0 || args[0] === '--help' || args[0] === '-h') {
   console.log(`
 ╔══════════════════════════════════════════════════════════════════╗
-║        career-ops — Auto-Apply Pipeline (Gemini-powered)        ║
+║        resume-writer — Auto-Apply Pipeline (Gemini-powered)        ║
 ╚══════════════════════════════════════════════════════════════════╝
 
   One command: JD → Evaluation → Tailored CV → Draft Email → Tracker
@@ -185,7 +185,7 @@ function ensureDir(dir) { if (!existsSync(dir)) mkdirSync(dir, { recursive: true
 // ---------------------------------------------------------------------------
 // Load context
 // ---------------------------------------------------------------------------
-console.log('\n🚀 career-ops AUTO-APPLY PIPELINE');
+console.log('\n🚀 resume-writer AUTO-APPLY PIPELINE');
 console.log('═'.repeat(50));
 console.log('📂 Loading context...');
 
@@ -201,7 +201,7 @@ const cvTemplate      = readFile(PATHS.cvTemplate, 'cv-template.html');
 // ---------------------------------------------------------------------------
 console.log(`\n📋 STEP 1/4: Evaluating JD with Gemini (${modelName})...`);
 
-const evalPrompt = `You are career-ops, an AI job search assistant.
+const evalPrompt = `You are resume-writer, an AI job search assistant.
 Evaluate the job offer below against the candidate's CV using blocks A-G.
 
 ${sharedContext}
@@ -286,7 +286,7 @@ console.log(`\n📝 STEP 2/4: Generating tailored CV...`);
 const cvPrompt = `Generate a complete HTML CV for this candidate, tailored for the job below.
 
 Use this exact HTML template structure (fill in all {{PLACEHOLDERS}}):
-- Use the career-ops CV template design (Space Grotesk headings, DM Sans body, teal/purple gradient)
+- Use the resume-writer CV template design (Space Grotesk headings, DM Sans body, teal/purple gradient)
 - Font files are at ./fonts/space-grotesk-latin.woff2, ./fonts/dm-sans-latin.woff2, etc.
 - Reorder and emphasize projects/skills that match the JD
 - Write a tailored Professional Summary (3-4 lines) that maps candidate strengths to JD requirements

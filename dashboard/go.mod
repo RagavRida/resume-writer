@@ -1,4 +1,4 @@
-module github.com/raghavendramachikatla/career-ops/dashboard
+module github.com/raghavendramachikatla/resume-writer/dashboard
 
 go 1.24.2
 

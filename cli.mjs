@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * cli.mjs — Unified CLI Entry Point for Career-Ops
+ * cli.mjs — Unified CLI Entry Point for Resume Writer
  * Provides commands for manual execution and lets users spin up the stdio MCP server.
  */
 

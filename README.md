@@ -1,8 +1,5 @@
-# Career-Ops
+# Resume Writer
 
-<p align="center">
-  <a href="https://x.com/RagavRida"><img src="docs/hero-banner.jpg" alt="Career-Ops — Multi-Agent Job Search System" width="800"></a>
-</p>
 
 <p align="center">
   <em>I spent months applying to jobs the hard way. So I engineered the system I wish I had.</em><br>
@@ -10,24 +7,9 @@
   <em>Now it's open source.</em>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Claude_Code-000?style=flat&logo=anthropic&logoColor=white" alt="Claude Code">
-  <img src="https://img.shields.io/badge/OpenCode-111827?style=flat&logo=terminal&logoColor=white" alt="OpenCode">
-  <img src="https://img.shields.io/badge/Gemini_CLI-4285F4?style=flat&logo=google&logoColor=white" alt="Gemini CLI">
-  <img src="https://img.shields.io/badge/Codex_(soon)-6B7280?style=flat&logo=openai&logoColor=white" alt="Codex">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" alt="Go">
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white" alt="Playwright">
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT">
-  <a href="TRADEMARK.md"><img src="https://img.shields.io/badge/Trademark-Policy-blue.svg" alt="Trademark Policy"></a>
 
-</p>
 
 ---
-
-<p align="center">
-  <img src="docs/demo.gif" alt="Career-Ops Demo" width="800">
-</p>
 
 <p align="center"><strong>740+ job listings evaluated · 100+ personalized CVs · 1 dream role landed</strong></p>
 
@@ -35,7 +17,7 @@
 
 ## What Is This
 
-Career-Ops ([career-ops.org](https://career-ops.org), also known as **careerops**) turns any AI coding CLI into a full job search command center. Instead of manually tracking applications in a spreadsheet, you get an AI-powered pipeline that:
+Resume Writer ([resume-writer.org](https://resume-writer.org), also known as **resumewriter**) turns any AI coding CLI into a full job search command center. Instead of manually tracking applications in a spreadsheet, you get an AI-powered pipeline that:
 
 - **Evaluates offers** with a structured A-F scoring system (10 weighted dimensions)
 - **Generates tailored PDFs** -- ATS-optimized CVs customized per job description
@@ -43,13 +25,13 @@ Career-Ops ([career-ops.org](https://career-ops.org), also known as **careerops*
 - **Processes in batch** -- evaluate 10+ offers in parallel with sub-agents
 - **Tracks everything** in a single source of truth with integrity checks
 
-> **Important: This is NOT a spray-and-pray tool.** Career-ops is a filter -- it helps you find the few offers worth your time out of hundreds. The system strongly recommends against applying to anything scoring below 4.0/5. Your time is valuable, and so is the recruiter's. Always review before submitting.
+> **Important: This is NOT a spray-and-pray tool.** Resume Writer is a filter -- it helps you find the few offers worth your time out of hundreds. The system strongly recommends against applying to anything scoring below 4.0/5. Your time is valuable, and so is the recruiter's. Always review before submitting.
 
-Career-ops is agentic: Claude Code navigates career pages with Playwright, evaluates fit by reasoning about your CV vs the job description (not keyword matching), and adapts your resume per listing.
+Resume Writer is agentic: Claude Code navigates career pages with Playwright, evaluates fit by reasoning about your CV vs the job description (not keyword matching), and adapts your resume per listing.
 
 > **Heads up: the first evaluations won't be great.** The system doesn't know you yet. Feed it context -- your CV, your career story, your proof points, your preferences, what you're good at, what you want to avoid. The more you nurture it, the better it gets. Think of it as onboarding a new recruiter: the first week they need to learn about you, then they become invaluable.
 
-Built by someone who used it to evaluate 740+ job offers, generate 100+ tailored CVs, and land a Head of Applied AI role. [Read the full case study](https://github.com/raghavendramachikatla/career-ops-system).
+Built by someone who used it to evaluate 740+ job offers, generate 100+ tailored CVs, and land a Head of Applied AI role. [Read the full case study](https://github.com/raghavendramachikatla/resume-writer-system).
 
 ## Features
 
@@ -70,8 +52,8 @@ Built by someone who used it to evaluate 740+ job offers, generate 100+ tailored
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/raghavendramachikatla/career-ops.git
-cd career-ops && npm install
+git clone https://github.com/raghavendramachikatla/resume-writer.git
+cd resume-writer && npm install
 npx playwright install chromium   # Required for PDF generation
 
 # 2. Check setup
@@ -94,7 +76,7 @@ claude   # Open Claude Code in this directory
 # "Update my profile with this CV I'm pasting"
 
 # 6. Start using
-# Paste a job URL or run /career-ops
+# Paste a job URL or run /resume-writer
 ```
 
 > **The system is designed to be customized by Claude itself.** Modes, archetypes, scoring weights, negotiation scripts -- just ask Claude to change them. It reads the same files it uses, so it knows exactly what to edit.
@@ -103,7 +85,7 @@ See [docs/SETUP.md](docs/SETUP.md) for the full setup guide.
 
 ## Gemini CLI Integration
 
-Career-ops supports [Gemini CLI](https://github.com/google-gemini/gemini-cli) natively — the same way it supports Claude Code and OpenCode. All 15 slash commands are available, using the same `modes/*.md` evaluation logic.
+Resume Writer supports [Gemini CLI](https://github.com/google-gemini/gemini-cli) natively — the same way it supports Claude Code and OpenCode. All 15 slash commands are available, using the same `modes/*.md` evaluation logic.
 
 ### Option A — Native Gemini CLI (Recommended)
 
@@ -115,16 +97,16 @@ npm install -g @google/gemini-cli
 # 2. Authenticate (free — uses your Google account)
 gemini auth
 
-# 3. Run in the career-ops directory
-cd career-ops
+# 3. Run in the resume-writer directory
+cd resume-writer
 gemini
 
 # 4. Use slash commands just like Claude Code
-/career-ops "Senior AI Engineer at Anthropic..."
-/career-ops-evaluate --file ./jds/openai.txt
-/career-ops-scan
-/career-ops-pdf
-/career-ops-tracker
+/resume-writer "Senior AI Engineer at Anthropic..."
+/resume-writer-evaluate --file ./jds/openai.txt
+/resume-writer-scan
+/resume-writer-pdf
+/resume-writer-tracker
 ```
 
 The `GEMINI.md` file is auto-loaded as context. All 15 commands are defined in `.gemini/commands/*.toml`.
@@ -149,24 +131,24 @@ npm run gemini:eval -- "JD text here"
 
 ## Usage
 
-Career-ops is a single slash command with multiple modes:
+Resume Writer is a single slash command with multiple modes:
 
 ```
-/career-ops                → Show all available commands
-/career-ops {paste a JD}   → Full auto-pipeline (evaluate + PDF + tracker)
-/career-ops scan           → Scan portals for new offers
-/career-ops pdf            → Generate ATS-optimized CV
-/career-ops batch          → Batch evaluate multiple offers
-/career-ops tracker        → View application status
-/career-ops apply          → Fill application forms with AI
-/career-ops pipeline       → Process pending URLs
-/career-ops contact       → LinkedIn outreach message
-/career-ops deep           → Deep company research
-/career-ops training       → Evaluate a course/cert
-/career-ops project        → Evaluate a portfolio project
+/resume-writer                → Show all available commands
+/resume-writer {paste a JD}   → Full auto-pipeline (evaluate + PDF + tracker)
+/resume-writer scan           → Scan portals for new offers
+/resume-writer pdf            → Generate ATS-optimized CV
+/resume-writer batch          → Batch evaluate multiple offers
+/resume-writer tracker        → View application status
+/resume-writer apply          → Fill application forms with AI
+/resume-writer pipeline       → Process pending URLs
+/resume-writer contact       → LinkedIn outreach message
+/resume-writer deep           → Deep company research
+/resume-writer training       → Evaluate a course/cert
+/resume-writer project        → Evaluate a portfolio project
 ```
 
-Or just paste a job URL or description directly -- career-ops auto-detects it and runs the full pipeline.
+Or just paste a job URL or description directly -- resume-writer auto-detects it and runs the full pipeline.
 
 ## How It Works
 
@@ -228,7 +210,7 @@ Features: 6 filter tabs, 4 sort modes, grouped/flat view, lazy-loaded previews, 
 ## Project Structure
 
 ```
-career-ops/
+resume-writer/
 ├── AGENTS.md                    # Canonical agent instructions (all CLIs)
 ├── CLAUDE.md                    # Claude Code wrapper (imports AGENTS.md)
 ├── cv.md                        # Your CV (create this)
@@ -260,11 +242,6 @@ career-ops/
 
 ## Tech Stack
 
-![Claude Code](https://img.shields.io/badge/Claude_Code-000?style=flat&logo=anthropic&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
-![Bubble Tea](https://img.shields.io/badge/Bubble_Tea-FF75B5?style=flat&logo=go&logoColor=white)
 
 - **Agent**: Claude Code with custom skills and modes
 - **PDF**: Playwright/Puppeteer + HTML template
@@ -278,23 +255,23 @@ career-ops/
 
 ## About the Author
 
-I'm Raghavendra -- Head of Applied AI, former founder (built and sold a business that still runs with my name on it). I built career-ops to manage my own job search. It worked: I used it to land my current role.
+I'm Raghavendra -- Head of Applied AI, former founder (built and sold a business that still runs with my name on it). I built resume-writer to manage my own job search. It worked: I used it to land my current role.
 
 My portfolio and other open source projects → [raghavendramachikatla](https://github.com/raghavendramachikatla)
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=raghavendramachikatla%2Fcareer-ops&type=timeline&legend=top-left">
+<a href="https://www.star-history.com/?repos=raghavendramachikatla%2Fresume-writer&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=raghavendramachikatla/career-ops&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=raghavendramachikatla/career-ops&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=raghavendramachikatla/career-ops&type=timeline&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=raghavendramachikatla/resume-writer&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=raghavendramachikatla/resume-writer&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=raghavendramachikatla/resume-writer&type=timeline&legend=top-left" />
  </picture>
 </a>
 
 ## Disclaimer
 
-**career-ops is a local, open-source tool — NOT a hosted service.** By using this software, you acknowledge:
+**resume-writer is a local, open-source tool — NOT a hosted service.** By using this software, you acknowledge:
 
 1. **You control your data.** Your CV, contact info, and personal data stay on your machine and are sent directly to the AI provider you choose (Anthropic, OpenAI, etc.). We do not collect, store, or have access to any of your data.
 2. **You control the AI.** The default prompts instruct the AI not to auto-submit applications, but AI models can behave unpredictably. If you modify the prompts or use different models, you do so at your own risk. **Always review AI-generated content for accuracy before submitting.**
@@ -306,7 +283,7 @@ See [LEGAL_DISCLAIMER.md](LEGAL_DISCLAIMER.md) for full details. This software i
 
 ## License & Trademark
 
-The code is licensed under [MIT](LICENSE). The "career-ops" name and
+The code is licensed under [MIT](LICENSE). The "resume-writer" name and
 brand are governed by the [Trademark Policy](TRADEMARK.md) — permissive
 for community use, reserved for commercial product naming and
 endorsement.

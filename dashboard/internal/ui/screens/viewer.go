@@ -10,7 +10,7 @@ import (
 	"github.com/charmbracelet/lipgloss/table"
 	"github.com/charmbracelet/x/ansi"
 
-	"github.com/raghavendramachikatla/career-ops/dashboard/internal/theme"
+	"github.com/raghavendramachikatla/resume-writer/dashboard/internal/theme"
 )
 
 // ViewerClosedMsg is emitted when the viewer is dismissed.

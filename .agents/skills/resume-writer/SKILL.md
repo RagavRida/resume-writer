@@ -1,5 +1,5 @@
 ---
-name: career-ops
+name: resume-writer
 description: AI job search command center -- evaluate offers, generate CVs, scan portals, track applications
 arguments: mode # Claude Code specific
 user-invocable: true
@@ -7,7 +7,7 @@ argument-hint: "[scan | deep | pdf | oferta | ofertas | apply | batch | tracker 
 license: MIT
 ---
 
-# career-ops -- Router
+# resume-writer -- Router
 
 ## Mode Routing
 
@@ -45,28 +45,28 @@ If `$mode` is not a sub-command AND doesn't look like a JD, show discovery.
 Show this menu:
 
 ```
-career-ops -- Command Center
+resume-writer -- Command Center
 
 Available commands:
-  /career-ops {JD}      → AUTO-PIPELINE: evaluate + report + PDF + tracker (paste text or URL)
-  /career-ops pipeline  → Process pending URLs from inbox (data/pipeline.md)
-  /career-ops evaluate    → Evaluation only A-F (no auto PDF)
-  /career-ops evaluates   → Compare and rank multiple offers
-  /career-ops contact  → LinkedIn power move: find contacts + draft message
-  /career-ops deep      → Deep research prompt about company
-  /career-ops interview-prep → Generate company-specific interview prep doc
-  /career-ops pdf       → PDF only, ATS-optimized CV
-  /career-ops training  → Evaluate course/cert against North Star
-  /career-ops project   → Evaluate portfolio project idea
-  /career-ops tracker   → Application status overview
-  /career-ops apply     → Live application assistant (reads form + generates answers)
-  /career-ops scan      → Scan portals and discover new offers
-  /career-ops batch     → Batch processing with parallel workers
-  /career-ops patterns  → Analyze rejection patterns and improve targeting
-  /career-ops followup  → Follow-up cadence tracker: flag overdue, generate drafts
-  /career-ops update    → Update career-ops system files with diff preview + compat check
+  /resume-writer {JD}      → AUTO-PIPELINE: evaluate + report + PDF + tracker (paste text or URL)
+  /resume-writer pipeline  → Process pending URLs from inbox (data/pipeline.md)
+  /resume-writer evaluate    → Evaluation only A-F (no auto PDF)
+  /resume-writer evaluates   → Compare and rank multiple offers
+  /resume-writer contact  → LinkedIn power move: find contacts + draft message
+  /resume-writer deep      → Deep research prompt about company
+  /resume-writer interview-prep → Generate company-specific interview prep doc
+  /resume-writer pdf       → PDF only, ATS-optimized CV
+  /resume-writer training  → Evaluate course/cert against North Star
+  /resume-writer project   → Evaluate portfolio project idea
+  /resume-writer tracker   → Application status overview
+  /resume-writer apply     → Live application assistant (reads form + generates answers)
+  /resume-writer scan      → Scan portals and discover new offers
+  /resume-writer batch     → Batch processing with parallel workers
+  /resume-writer patterns  → Analyze rejection patterns and improve targeting
+  /resume-writer followup  → Follow-up cadence tracker: flag overdue, generate drafts
+  /resume-writer update    → Update resume-writer system files with diff preview + compat check
 
-Inbox: add URLs to data/pipeline.md → /career-ops pipeline
+Inbox: add URLs to data/pipeline.md → /resume-writer pipeline
 Or paste a JD directly to run the full pipeline.
 ```
 
@@ -93,7 +93,7 @@ For `scan`, `apply` (with Playwright), and `pipeline` (3+ URLs): launch as Agent
 Agent(
   subagent_type="general-purpose",
   prompt="[content of modes/_shared.md]\n\n[content of modes/{mode}.md]\n\n[invocation-specific data]",
-  description="career-ops {mode}"
+  description="resume-writer {mode}"
 )
 ```
 

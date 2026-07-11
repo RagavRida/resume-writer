@@ -1,6 +1,6 @@
-# career-ops Trademark Policy
+# resume-writer Trademark Policy
 
-This document explains how the "career-ops" name and brand may be used.
+This document explains how the "resume-writer" name and brand may be used.
 It complements — not replaces — the MIT [LICENSE](LICENSE) that governs
 the source code.
 
@@ -16,7 +16,7 @@ the source code.
 
 The MIT license grants broad freedoms to use, copy, modify, and
 redistribute the source code. It does not grant rights to the name
-"career-ops," its visual identity, or any associated brand assets.
+"resume-writer," its visual identity, or any associated brand assets.
 Those are reserved by the project's maintainer, Raghavendra
 Manchikatla, and any successor entity stewarding the project.
 
@@ -30,10 +30,10 @@ The following uses are explicitly welcome:
 
 - **Forking and modifying the code** — per MIT, no permission needed.
 - **Describing compatibility, origin, and lineage** — "works with
-  career-ops," "based on career-ops," "fork of career-ops," "extends
-  career-ops" are all welcome and encouraged with attribution.
+  resume-writer," "based on resume-writer," "fork of resume-writer," "extends
+  resume-writer" are all welcome and encouraged with attribution.
 - **Naming a fork distinctly** — pick your own product name; mention
-  career-ops as origin if you like.
+  resume-writer as origin if you like.
 - **Educational, journalistic, and personal use** — blog posts,
   tutorials, videos, talks, papers, research.
 - **Community contributions** — using the name freely in PRs, issues,
@@ -45,20 +45,20 @@ The following uses are reserved because they cause — or can be
 reasonably perceived to cause — confusion about official affiliation,
 endorsement, or sponsorship:
 
-- **Product, service, or company names** that include "career-ops" or
+- **Product, service, or company names** that include "resume-writer" or
   close variants. This includes prefixes, suffixes, and capitalizations:
-  "career-ops Cloud," "career-ops Pro," "career-ops SaaS," "Career-Ops
-  Hosted," "CareerOps by [vendor]," "Cloud career-ops," etc.
+  "resume-writer Cloud," "resume-writer Pro," "resume-writer SaaS," "Resume Writer
+  Hosted," "CareerOps by [vendor]," "Cloud resume-writer," etc.
 - **Endorsement, sponsorship, or affiliation claims** in any context:
-  "Powered by career-ops," "Official career-ops," "Sponsored by
-  career-ops," "Partner of career-ops," "Featured by career-ops," and
+  "Powered by resume-writer," "Official resume-writer," "Sponsored by
+  resume-writer," "Partner of resume-writer," "Featured by resume-writer," and
   similar phrasings.
 - **Domain names, social handles, and app store listings** containing
-  "career-ops" or close variants for commercial purposes.
+  "resume-writer" or close variants for commercial purposes.
 - **Logos, wordmarks, color schemes, and visual identity assets** in
   any commercial context.
 - **Compatibility certifications** that imply official testing or
-  approval ("career-ops Certified," "career-ops Verified").
+  approval ("resume-writer Certified," "resume-writer Verified").
 
 This list is illustrative, not exhaustive. The principle is: if your
 use suggests an official relationship that doesn't exist, please ask.
@@ -79,7 +79,7 @@ use case described.
 
 ## Why this policy exists
 
-career-ops is a community-built project used by tens of thousands of
+resume-writer is a community-built project used by tens of thousands of
 people. A clear brand allows the code to remain free, the documentation
 trustworthy, and contributors confident that no one is impersonating
 the project.
@@ -102,7 +102,7 @@ will be announced in [CHANGELOG.md](CHANGELOG.md).
 
 ---
 
-© 2026 Raghavendra Manchikatla. "career-ops"™ is a trademark of
+© 2026 Raghavendra Manchikatla. "resume-writer"™ is a trademark of
 Raghavendra Manchikatla. A trademark application has been filed
 with the Intellectual Property India office (CGPDTM) in classes 9
 (downloadable software) and 42 (Software-as-a-Service); registration

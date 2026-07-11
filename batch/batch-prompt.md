@@ -1,4 +1,4 @@
-# career-ops Batch Worker — Full Evaluation + PDF + Tracker Line
+# resume-writer Batch Worker — Full Evaluation + PDF + Tracker Line
 
 You are a job offer evaluation worker for the candidate (read name from config/profile.yml). You receive an offer (URL + JD text) and produce:
 
@@ -228,7 +228,7 @@ Where `{company-slug}` is the company name in lowercase, no spaces, dashed.
 **Score:** {X/5}
 **Legitimacy:** {High Confidence | Proceed with Caution | Suspicious}
 **URL:** {Original offer URL}
-**PDF:** career-ops/output/cv-candidate-{company-slug}-{{DATE}}.pdf
+**PDF:** resume-writer/output/cv-candidate-{company-slug}-{{DATE}}.pdf
 **Batch ID:** {{ID}}
 
 ---
